@@ -1,0 +1,90 @@
+/*
+ * Project: CirclePlayer
+ * http://www.jplayer.org
+ *
+ * Copyright (c) 2012 Happyworm Ltd
+ *
+ * Author: Silvia Benvenuti
+ * Edited by: Mark J Panaghiston
+ * Date: 2nd October 2012
+ * Artwork inspired by: http://forrst.com/posts/Untitled-CJz
+ */
+
+.cp-container {
+	width:230px;
+	height:230px;
+}
+
+.cp-container :focus {
+	border:none;
+	outline:0;
+}
+
+.cp-container-empty :focus {
+	border:none;
+	outline:0;
+}
+
+.cp-circle-control {
+	position:absolute;
+	cursor:pointer;
+}
+
+.cp-circle-back {
+	position:absolute;
+	width:226px;
+	height:226px;
+	margin: 2px;
+	background-color: #3E8CE2;
+	border-radius: 128px;
+}
+
+.cp-controls {
+	margin:0;
+	padding: 0;
+}
+
+.cp-controls li{
+	list-style-type:none;
+	display:block;
+
+	/*IE Fix*/
+	position:absolute;
+}
+
+.cp-controls li a{
+	position:relative;
+	display:block;
+	text-indent:-9999px;
+	z-index:1;
+	cursor:pointer;
+}
+
+.cp-controls .cp-play {
+	background:url("button_play.svg") 0 0 no-repeat;
+	background-position: center center;
+	width:230px;
+	height:230px;
+	background-size: 230px 230px;
+}
+
+.cp-controls .cp-pause {
+	background:url("button_pause.svg") 0 0 no-repeat;
+	background-position: center center;
+	width:230px;
+	height:230px;
+	background-size: 230px 230px;
+}
+
+.cp-controls .cp-empty-button {
+	background:url("button_empty.svg") 0 0 no-repeat;
+	background-position: center center;
+	width:230px;
+	height:230px;
+	background-size: 230px 230px;
+}
+
+.cp-jplayer {
+	width:0;
+	height:0;
+}
